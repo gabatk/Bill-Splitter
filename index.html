@@ -5,24 +5,29 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>BillSplitter</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+			rel="stylesheet" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
 		<div class="wrapper">
 			<div class="top">
 				<h1>BillSplitter</h1>
-				<p>Share the bill with your friends! 😄</p>
+				<p class="top-info">Share the bill with your friends! 😄</p>
 			</div>
 
-			<div class="bottom"></div>
-			<label for="price">Amount to be paid:</label>
-			<input type="number" id="price" />
+			<div class="bottom">
+			<label for="price" class="bottom-label">Amount to be paid:</label>
+			<input type="number" id="price"  class="form-field"/>
 
-			<label for="people">Number of people:</label>
-			<input type="number" id="people" />
+			<label for="people" class="bottom-label">Number of people:</label>
+			<input type="number" id="people"  class="form-field"/>
 
-			<label for="tip">Tip rate:</label>
-			<select id="tip">
+			<label for="tip" class="bottom-label">Tip rate:</label>
+			<select id="tip" class="form-field">
 				<option value="0" disabled selected>- Choose tip rate -</option>
 				<option value="0.05">5%</option>
 				<option value="0.1">10%</option>
@@ -36,6 +41,7 @@
 				Each person should pay $<span class="cost"></span>! 🤑
 			</p>
 		</div>
+	</div>
 
 		<script src="./js/main.js"></script>
 	</body>
