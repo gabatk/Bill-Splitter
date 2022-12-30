@@ -10,13 +10,14 @@ const tipValue = () => {
 	let tipRate = Number(formFields[2].value);
 
 	if (billValue != 0 && people != 0 && tipRate != 0) {
-		billPerPerson.innerHTML = (
+		billPerPerson.textContent = (
 			(billValue + billValue * tipRate) /
 			people
 		).toFixed(2);
 		costInfo.style.display = 'block';
+		errorField.textContent = '';
 	} else {
-		errorField.innerHTML = 'All fields must be completed!';
+		errorField.textContent = 'All fields must be completed!';
 	}
 };
 
