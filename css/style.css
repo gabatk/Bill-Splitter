@@ -41,3 +41,56 @@ body {
 .top-info {
     margin-top: 10px;
 }
+
+.bottom {
+    padding: 40px 20px;
+}
+
+.bottom-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+
+.form-field {
+    margin-bottom: 25px;
+    padding: 8px 10px;
+    width: 100%;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    border: 1px solid rgb(185, 185, 185);
+}
+
+.count {
+    display: block;
+    margin: 20px auto;
+    padding: 20px 10px;
+    width: 60%;
+    font-size: 2rem;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #23ba5d;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.count:hover {
+    background-color: #1fa452;
+}
+
+.cost-info {
+    display: none;
+    margin-top: 30px;
+    font-size: 1.8rem;
+}
+
+.cost {
+    font-weight: bold;
+}
+
+.error {
+    font-size: 1.6rem;
+    color: rgb(199, 63, 29);
+    text-align: center;
+}
